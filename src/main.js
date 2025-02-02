@@ -1,6 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
+import { BreakingbadApp } from './rickandmorty/rickandmorty-app'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -11,8 +12,12 @@ document.querySelector('#app').innerHTML = `
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
     <h1 id="app-title">Hello Vite!</h1>
-    <div class="card">
+    <div class="card" id='tarjeta'>
       
     </div>    
   </div>
 `
+
+const element = document.getElementById('tarjeta');
+
+BreakingbadApp(element);
